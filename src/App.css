@@ -1,0 +1,125 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+}
+
+/* body {
+  background: linear-gradient(
+    90deg,
+    rgb(25, 60, 65) 0%,
+    rgb(184, 39, 219) 100%
+  );
+} */
+
+body {
+  background: black;
+}
+.App {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: start; */
+  /* width: 403px; */
+  min-height: 700px;
+
+  text-align: center;
+  margin: 40px auto;
+  /* border-radius: 10px;
+  padding-bottom: 32px; */
+}
+
+h2 {
+  margin: 32px 0;
+  color: #fff;
+  font-size: 24px;
+}
+.todo-input {
+  padding: 14px 32px 14px 16px;
+  border-radius: 4px 0 0 4px;
+  border: 2px solid #5d0cff;
+  outline: none;
+  width: 320px;
+  background: transparent;
+  color: #fff;
+}
+.todo-button {
+  padding: 16px;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  outline: none;
+  background: linear-gradient(
+    90deg,
+    rgba(93, 12, 255, 1) 0%,
+    rgba(155, 0, 250, 1) 100%
+  );
+  color: #fff;
+  text-transform: capitalize;
+}
+
+.delete-icon {
+  margin-right: 5px;
+  background-color: purple;
+  border: none;
+  color: white;
+  padding: 6px 9px;
+  font-size: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.clearAll{
+  padding: 14px 32px 14px 16px;
+  border-radius: 4px 0 0 4px;
+  border: 2px solid #5d0cff;
+  outline: none;
+  width: 320px;
+  background: transparent;
+  color: purple;
+}
+
+.editing input{
+  background-color: transparent;
+  border: 0;
+  color: #fff;
+  font-size: 18px;
+}
+.editing input{
+  outline: none;
+}
+/* body{
+  --dark: #374151;
+  --darker: #1f2937;
+  --darkest: #111827;
+  --gray: #6B7280;
+  --light: #EEE;
+  --pink: #EC4899;
+  --purple: #8B5Cf6;
+}
+
+.App {
+  background-color: #FC8BBE;
+  min-height: 700px;
+  width: 403px;
+  margin: 40px auto;
+} */
+/* #form input{
+   flex: 1 1 0%;
+   background-color: var(--darker);
+   padding: 0.5rem;
+   border-radius: 1rem;
+   margin-right: 4rem;
+}
+#form input{
+color: var(--pink);
+}
+
+#form button {
+  color: var(--pink);
+} */
+
+span{
+  color: purple;
+}
