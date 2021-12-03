@@ -1,20 +1,21 @@
 import React from "react";
 import ToDoItem from "./ToDoItem";
 
-class List extends React.Component {
+function List ({toDoItems, remove, edit})  {
 
-    render(){
-        return(
-            <div>
-                {this.props.toDoItems.map((toDoItem) => 
-                    <ToDoItem edit={this.props.edit}
-                    remove={this.props.remove}  
+    return(
+        <div>
+            {toDoItems.map((toDoItem) => {
+                return (
+                    <ToDoItem edit={edit}
+                    remove={remove}  
                     key={toDoItem.id} 
                     item={toDoItem} />
-                )}
-            </div>
-        )
-    }
+                )
+            }
+            )}
+        </div>
+    )
 }
 
 export default List;
